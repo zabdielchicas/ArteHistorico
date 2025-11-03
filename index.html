@@ -1,72 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galería de Arte</title>
-
-  <!-- Fuente y hoja de estilos -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="VZ8jXP9bxZK6BcncLWiFyKEDVtKYBOmJR4md_ghKsOg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandes Obras del Arte</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #f3e9dc, #fcecd3, #f6d8ac);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #caa874, #b88a44, #caa874);
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+            padding: 30px;
+            border-bottom: 4px solid #b88a44;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-style: italic;
+            margin-top: 5px;
+            font-size: 1.1em;
+        }
+        .obra {
+            background: rgba(255,255,255,0.9);
+            border-radius: 16px;
+            margin: 40px auto;
+            width: 85%;
+            max-width: 700px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .obra:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        img {
+            width: 100%;
+            border-radius: 12px;
+            border: 3px solid #d8b06a;
+        }
+        h2 {
+            color: #6b4b2b;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        footer {
+            background: #caa874;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+            border-top: 4px solid #b88a44;
+        }
+        footer span {
+            color: #b61393;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
-  <!-- ENCABEZADO -->
-  <header>
-    <h1>Galería de Arte</h1>
-    <nav>
-      <a class="active" href="#inicio">Inicio</a>
-      <a href="#galeria">Obras</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+    <header>
+        <h1>Grandes Obras del Arte</h1>
+        <p>La Creación de Adán • Guernica • Las Dos Fridas</p>
+    </header>
 
-  <!-- INICIO -->
-  <section id="inicio" class="hero">
-    <h2>Bienvenidos al mundo del arte</h2>
-    <p>Explora las obras más famosas y deja que el arte despierte tu imaginación.</p>
-    <div class="acciones">
-      <button id="btnMensaje" class="btn">Ver mensaje</button>
-      <button id="btnTema" class="btn secundario">Tema claro/oscuro</button>
-    </div>
-  </section>
-
-  <!-- GALERÍA -->
-  <main id="galeria" class="contenedor">
-    <h3>Obras famosas</h3>
-    <div class="grid">
-      <article class="card">
-        <img src="css/js/img/creacion de adan.jpg" alt="La Noche Estrellada" />
-        <h4>Creacion de Adan</h4>
-        <p>Miguel Ángel alrededor de 1511</p>
-      </article>
-
-      <article class="card">
-        <img src="css/js/img/guernica.jpg" alt="Mona Lisa" />
-        <h4G>Guernica</h4G>
-        <p>Pablo Picasso para la Exposición Internacional de París de 1937</p>
-      </article>
-
-      <article class="card">
-        <img src="css/js/img/las dos fridas.jpg" alt="La Última Cena" />
-        <h4>Las dos fridas</h4>
-        <p>Frida Kahlo creó "Las dos Fridas" en 1939</p>
-      </article>
-    </div>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contacto">
-      <h3>Contáctanos</h3>
-      <p><strong>Teléfono:</strong> +503 2222-3333</p>
-      <p><strong>Dirección:</strong> Calle Cultura #45, San Salvador</p>
-      <p><strong>Correo:</strong> info@galeriadearte.com</p>
+    <section class="obra">
+        <h2>La Creación de Adán</h2>
+        <img src="css/js/img/creacion de adan.jpg" alt="La creación de Adán">
+        <p><strong>Autor:</strong> Miguel Ángel (1511)</p>
+        <p>Parte del techo de la Capilla Sixtina, muestra el instante en que Dios le da vida a Adán, simbolizando la conexión entre lo divino y lo humano.</p>
     </section>
-  </main>
 
-  <!-- PIE -->
-  <footer>© 2025 · Proyecto Educativo de Arte</footer>
+    <section class="obra">
+        <h2>Guernica</h2>
+        <img src="css/js/img/guernica.jpg" alt="Guernica">
+        <p><strong>Autor:</strong> Pablo Picasso (1937)</p>
+        <p>Una de las obras más poderosas del siglo XX, representa el dolor y la tragedia causados por la guerra, usando un estilo cubista en blanco y negro.</p>
+    </section>
 
-  <!-- JavaScript -->
-  <script src="js/script.js"></script>
+    <section class="obra">
+        <h2>Las Dos Fridas</h2>
+        <img src="css/js/img/las dos fridas.jpg" alt="Las Dos Fridas">
+        <p><strong>Autora:</strong> Frida Kahlo (1939)</p>
+        <p>Refleja el conflicto interno de la artista entre su identidad mexicana y europea, mostrando dos versiones de sí misma unidas por el corazón.</p>
+    </section>
+
+    <footer>
+        <p>Proyecto de Cómputo — Tema: <span>El Arte</span> 🎨 | Elaborado por: <span>Zabdiel Chicas</span></p>
+    </footer>
 </body>
 </html>
+<html
+
